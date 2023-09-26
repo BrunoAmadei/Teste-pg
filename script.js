@@ -7,7 +7,7 @@ let currentPage = 0;
 function flipPage(direction) {
     const nextPage = direction === 'next' ? currentPage + 1 : currentPage - 1;
     if (nextPage >= 0 && nextPage < pages.length) {
-        pages[currentPage].style.transform = 'rotateY(-180deg)';
+        pages[currentPage].style.transform = 'rotateY(180deg)';
         pages[nextPage].style.transform = 'rotateY(0deg)';
         currentPage = nextPage;
     }
